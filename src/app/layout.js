@@ -3,8 +3,11 @@ import "./globals.css";
 import Providers from "@/store/Providers"; // <-- client provider import
 
 export const metadata = {
-  title: "My App",
+  title: "My Blog",
   description: "Next.js + Redux setup",
+  icons: {
+    icon: "/favicon.ico", // public folder se automatically load hoga
+  },
 };
 
 export default function RootLayout({ children }) {

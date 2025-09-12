@@ -18,10 +18,10 @@ const Signup = () => {
     setError(null);
     try {
       // Appwrite service se account create
-      const userAccount = await authService.CreateAccount(data);
+      const userAccount = await authService.createAccount(data);
       if (userAccount) {
         // account create hone ke baad user ko fetch karenge
-        const userData = await authService.GetCurrentUser();
+        const userData = await authService.getCurrentUser();
         if (userData) {
           dispatch(authLogin(userData));
           router.push("/");

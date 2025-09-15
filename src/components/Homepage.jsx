@@ -26,7 +26,7 @@ function Home() {
 
   if (Posts.length === 0) {
     return (
-      <div className="min-h-screen pt-20 bg-gradient-to-br from-slate-900 via-gray-900 to-black flex items-center justify-center relative overflow-hidden">
+      <div className="min-h-screen pt-20 bg-gradient-to-br from-slate-900 via-gray-900 to-black flex items-center justify-center relative ">
         {/* Animated background elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>

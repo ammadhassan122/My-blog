@@ -96,7 +96,7 @@ async CreatePost({ title, slug, content, featuredImage, status, userID }) {
 
   async deleteFile(fileId) {
     try {
-      await this.bucket.deleteFile(conf.appwriteBucketId, fileId);
+      await this.bucket.deleteFile(conf.appwritebucketId, fileId);
       return true;
     } catch (error) {
       console.log("Appwrite services :: Delete File Error ", error);

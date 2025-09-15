@@ -1,6 +1,7 @@
 import { Footer, Header } from "@/components";
 import "./globals.css";
 import Providers from "@/store/Providers"; // <-- client provider import
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: "My Blog",
@@ -31,7 +32,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header/>
           {children}
-          
+          <SpeedInsights />
           <Footer/>
           </Providers>
           </div>

@@ -13,7 +13,7 @@ function AllPosts() {
         })
     },[])
   return (
-    <div className='w-full h-screen z-30 pt-30 py-8'>
+    <div className='w-full min-h-screen z-30 pt-30 py-8'>
         <Container>
             <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 '>
                 {posts.map((post) => (

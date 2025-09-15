@@ -12,22 +12,27 @@ export class Service {
     this.bucket = new Storage(this.client);
   }
 
-async CreatePost({ title, slug, content, featuredImage, status, userID }) {
+async CreatePost({ title, slug, content, featuredImage, status, userID, authorName }) {
   try {
     return await this.databases.createDocument(
       conf.appwriteDatabaseId,
       conf.appwriteCollectionId,
       ID.unique(),
-      { title, slug, content, featuredImage, status, userID } // 🔥 key name EXACT same hona chahiye jo schema me hai
+      {
+        title,
+        slug,
+        content,
+        featuredImage,
+        status,
+        userID,
+        authorName, // 👈 yeh add kar diya
+      }
     );
   } catch (error) {
     console.log("Appwrite services :: Create Post Error ", error);
     throw error;
   }
 }
-
-
-
 
   async UpdatePost(slug, { title, content, featuredImage, status }) {
     try {

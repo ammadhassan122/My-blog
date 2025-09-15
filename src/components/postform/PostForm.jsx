@@ -51,6 +51,7 @@ const PostForm = ({ post }) => {
           ...data,
           userID: userData.$id,
           featuredImage: fileId,
+          authorName: userData?.name,
         });
         console.log("✅ Update Response:", dbPost);
       } else {
@@ -58,6 +59,7 @@ const PostForm = ({ post }) => {
           ...data,
           featuredImage: fileId,
           userID: userData?.$id,
+          authorName: userData?.name, 
         });
         console.log("✅ Create Response:", dbPost);
       }

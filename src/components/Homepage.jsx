@@ -116,7 +116,7 @@ function Home() {
                   <div className="flex flex-col z-50 sm:flex-row gap-4 pt-4">
                     <a 
                       href={`/posts/${latestPost.$id}`}
-                      className="group z-50 inline-flex items-center justify-center space-x-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-cyan-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-blue-500/20"
+                      className="group z-10 inline-flex items-center justify-center space-x-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-cyan-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-blue-500/20"
                     >
                       <span>Read Full Story</span>
                       <ArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={20} />
